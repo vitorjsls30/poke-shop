@@ -26,7 +26,30 @@
 .header__shop-info {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 5px;
+}
+
+.header__shop-title {
+  font-weight: bold;
+}
+
+.header__user {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.header__shop-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  background-image: url("../assets/img/fire-logo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .sidenav {
@@ -65,9 +88,14 @@
 }
 
 .item__photo {
-  height: 200px;
-  width: 100%;
-  background-color: slategrey;
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 1px rgb(191, 201, 211);
+  padding: 20px 0px;
+}
+
+.item__photo img {
+  height: 160px;
 }
 
 .item__info {
@@ -99,6 +127,7 @@
   padding: 10px 15px;
   color: white;
   font-size: 16px;
+  font-weight: bold;
 }
 
 .btn__add {
